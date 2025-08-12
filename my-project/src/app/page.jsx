@@ -1,6 +1,7 @@
 //component imports
 import Sidebar from "@/components/main-section/Sidebar";
 import CacyroySidebar from "@/components/main-section/CacyroySidebar";
+import ProductListing from "@/components/main-section/products-grid/ProductListing";
 
 export default function HomePage() {
   return (
@@ -10,6 +11,11 @@ export default function HomePage() {
         <Sidebar></Sidebar>
         <CacyroySidebar></CacyroySidebar>
       </aside>
+
+      {/* Product Grid */}
+      <section className="w-full lg:w-3/4 xl:w-4/5">
+        <ProductListing></ProductListing>
+      </section>
     </div>
   );
 }
