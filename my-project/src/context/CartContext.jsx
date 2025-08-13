@@ -15,6 +15,7 @@ export function CartProvider({ children }) {
   });
 
   useEffect(() => {
+    //storing cart number in localStorage for persistance
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
